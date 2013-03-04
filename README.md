@@ -23,4 +23,4 @@ For example,
 Motivation
 -----------
 
-The original [portdowngrade](http://portdowngrade.sourceforge.net/) does not support the SVN ports repository.
+The original [portdowngrade](http://portdowngrade.sourceforge.net/) <= 1.0 does not support the SVN ports repository. portdowngrade-1.0 now has support for SVN.
