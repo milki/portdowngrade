@@ -6,6 +6,7 @@ GITSVN="$GIT svn"
 BASH=/usr/local/bin/bash
 TAR=/usr/bin/tar
 RM=/bin/rm
+SUDO=/usr/local/bin/sudo
 
 : ${PORTSDIR:="/usr/ports"}
 
@@ -90,7 +91,7 @@ function choose_version {
 
 function export_to_portstree {
     # sudo
-    $GIT archive --format=tar HEAD | (cd $PORTSDIR/$portname/ && sudo $TAR -xf -)
+    $GIT archive --format=tar HEAD | (cd $PORTSDIR/$portname/ && $SUDO $TAR -xf -)
 }
 
 function cleanup {
